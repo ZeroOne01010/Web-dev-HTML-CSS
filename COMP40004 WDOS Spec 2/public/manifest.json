@@ -1,0 +1,61 @@
+{
+    "id": "index.html",
+    "start_url": "/",
+    "description": "CV PWA test. This is a test page to see how easy it is to build a PWA for a CV site",
+    "name": "CV app",
+    "short_name": "CV app",
+    "icons": [
+        {
+            "src": "icons/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "icons/maskable_icon.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+
+        {
+            "src": "icons/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ebea8d",
+    "background_color": "#ebea8d",
+    "display": "standalone",
+
+    "shortcuts": [
+        {
+            "name": "CV website",
+            "short_name": "CV",
+            "description": "check out my CV",
+            "url": "index.html",
+            "icons": [
+                {
+                    "src": "icons/maskable_icon.png",
+                    "sizes": "192x192"
+                } 
+		] } ]
+
+        ,
+    "screenshots": [
+        {
+            "src": "icons/screenshot-mobile.png",
+            "type": "image/png",
+            "sizes": "320x688",
+            "form_factor": "narrow"
+        },
+        {
+            "src": "icons/screenshot-desktop.png",
+            "type": "image/png",
+            "sizes": "804x400",
+            "form_factor": "wide"
+        }
+    ]
+
+}
+

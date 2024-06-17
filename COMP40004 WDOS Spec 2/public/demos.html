@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="This is the Demo's page of my CV hosting website">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="msapplication-config" content="icons/browserconfig.xml">
+    <meta name="theme-color" content="#ebea8d">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#6f4e37">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000">
+</head>
+
+<body id=>
+    <!-- Navigation elements -->
+    <nav class="mainNav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cssdemo.html">Css Demo</a></li>
+            <li><a href="demos.html" aria-current="page">Demos</a></li>
+            <li><a href="holding.html">Holding</a></li>
+            <li><a href="interest.html">Interest</a></li>
+            <li><a href="qualifications.html">quals</a></li>
+        </ul>
+    </nav>
+    <div id="page-container">
+        <h1>Welcome to my Demo's!</h1>
+        <div id="demo-container">
+            <div class="demo-item">
+                <p class="demo-text">The below link will take you directly to Javascript demo</p>
+                <!--https://github.com/topics/js-logo -->
+                <picture>
+                    <!-- For modern browsers supporting AVIF -->
+                    <source srcset="images/MOBILE_AVIF_Javascript.avif" media="(max-width: 767px)" type="image/avif"
+                        class="demo_pictures">
+                    <source srcset="images/DESKTOP_AVIF_Javascript.avif" type="image/avif">
+
+                    <!-- Fallback for older browsers -->
+                    <source srcset="images/MOBILE_WEBP_Javascript.webp" media="(max-width: 767px)" type="image/webp"
+                        class="demo_pictures">
+                    <source srcset="images/DESKTOP_WEBP_Javascript.webp" type="image/webp">
+
+                    <!-- Fallback for browsers not supporting AVIF or WebP -->
+                    <img src="images/DESKTOP_JPEG_Javascript.jpg" alt="JS-demo" width="200" height="200"
+                        class="demo_pictures">
+                </picture>
+
+                <div class="link-container">
+                    <a href="holding.html" id="js-link-text" class="demo-link">JS demo here</a>
+                </div>
+            </div>
+
+            <div class="demo-item">
+                <p class="demo-text">The below link will take you to the CSS demo page. </p>
+                <!--https://pixelmechanics.com.sg/general/css-guide-for-beginners -->
+
+                <picture>
+                    <!-- For modern browsers supporting AVIF -->
+                    <source srcset="images/MOBILE_AVIF_CSS.avif" media="(max-width: 767px)" type="image/avif"
+                        class="demo_pictures">
+                    <source srcset="images/DESKTOP_AVIF_CSS.avif" type="image/avif">
+
+                    <!-- Fallback for older browsers -->
+                    <source srcset="images/MOBILE_WEBP_CSS.webp" media="(max-width: 767px)" type="image/webp"
+                        class="demo_pictures">
+                    <source srcset="images/DESKTOP_WEBP_Javascript.webp" type="image/webp">
+
+                    <!-- Fallback for browsers not supporting AVIF or WebP -->
+                    <img src="images/DESKTOP_JPEG_CSS.jpg" alt="CSS-demo" width="200" height="200"
+                        class="demo_pictures">
+                </picture>
+
+                <div class="link-container">
+                    <a href="cssdemo.html" id="css-link-text" class="demo-link">CSS demo here</a>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <p class="demo-para"><em>This is my demo page, all works and ideas have been taking from tutorial tasks and
+                    lectures along with my current knowledge</em></p>
+        </div>
+
+        <div>
+            <p class="demo-para">
+                Over the course of the 2nd semester I have been working on different CSS skills and HTML structure. On
+                this
+                journey I have increased my CSS & HTML knowledge enabling me to create great looking websites that are
+                both
+                appealing and functional
+            </p>
+        </div>
+
+        <div class="demo-para">
+            <p>
+                "If you're interested in learning more about me, I warmly welcome you to reach out and connect with me.
+                I'm
+                open to sharing more about my experiences, passions, and expertise. Whether it's through a casual
+                conversation or a deeper exploration of my background, I'm eager to engage with you and foster mutual
+                understanding.
+            </p>
+            <p>
+                <br>Please don't hesitate to contact me through any preferred means of communication, whether it's
+                email,
+                phone, or social media. I value the opportunity to connect with others and am always excited to make new
+                connections.
+            </p>
+            <br>Additionally, I invite you to explore the demonstrations and examples I have available. These demos
+            showcase
+            various aspects of my work, skills, and interests. By checking them out, you can get a better sense of what
+            I
+            have to offer and how my experiences might align with your interests or needs.
+            <p>
+                <br>In summary, I'm here to connect, share, and learn together. Let's embark on a journey of discovery
+                and
+                mutual growth. Feel free to contact me at your convenience, and I look forward to the opportunity to
+                connect
+                with you and explore our potential collaboration further
+            </p>
+        </div>
+    </div>
+
+    <div>
+        <footer>
+            <p>
+                &copy; Jamie Carson student no. 23035895
+                This is for an assignment at Staffordshire University Web Dev and OS
+                <a href="https://validator.w3.org/nu/#file" class="footer-link">(link to html validation)</a>
+                <a href="https://jigsaw.w3.org/css-validator/validator" class="footer-link">(link to CSS validation)</a>
+            </p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

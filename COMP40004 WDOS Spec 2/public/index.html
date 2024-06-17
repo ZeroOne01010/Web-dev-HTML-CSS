@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="This is the home page of my CV hosting website">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="msapplication-config" content="icons/browserconfig.xml">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#6f4e37">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000">
+</head>
+
+<body>
+
+    <nav class="mainNav">
+        <ul>
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="cssdemo.html">Css Demo</a></li>
+            <li><a href="demos.html">Demos</a></li>
+            <li><a href="holding.html">Holding</a></li>
+            <li><a href="interest.html">Interest</a></li>
+            <li><a href="qualifications.html">quals</a></li>
+        </ul>
+    </nav>
+
+    <div id="boxes">
+        <div class="box">
+
+            <h1 class="headers">
+                Welcome to my resume
+            </h1>
+            <picture>
+                <!-- For modern browsers supporting AVIF -->
+                <source srcset="images/Profile_picture-mobile.avif" media="(max-width: 767px)" type="image/avif"
+                    class="profile">
+                <source srcset="images/Profile_picture.avif" type="image/avif">
+
+                <!-- Fallback for older browsers -->
+                <source srcset="images/Profile_picture-mobile.webp" media="(max-width: 767px)" type="image/webp"
+                    class="profile">
+                <source srcset="images/Profile_picture.webp" type="image/webp">
+
+                <!-- Fallback for browsers not supporting AVIF or WebP -->
+                <img src="images/profile_picture-desktop.jpg" alt="profile picture" width="200" height="200"
+                    class="profile">
+            </picture>
+        </div>
+
+
+        <div class="box">
+            <h2 class="headers">
+                <em>Personal Profile</em>
+            </h2>
+            <p id="index-personal">Versatile, ambitious, and qualified individual driven by a career change in the
+                Cybersecurity industry. Assumes an organised and analytical approach to ensure both managerial and
+                contractual satisfaction. An incredibly motivated team player and leader, with excellent communication
+                skills and the ability to develop positive relationship across all levels. Positive, proactive, and an
+                excellent multi-tasker, who performs well in fast-paced environments. Recognised for taking initiative
+                and functioning well under pressure. Knowledgeable in several forms of IT software and certified in ISO
+                270001 & ISO 270002.Always searching to acquire new knowledge and skills. </p>
+        </div>
+
+        <div class="box" id="hobbies">
+            <h3 class="headers">
+                <em>Hobbies and Interests</em>
+            </h3>
+            <p>Here are a few of my hobbies</p>
+            <ul>
+                <li>Chess</li>
+                <li>CTF hacking</li>
+                <li>Snowboarding</li>
+                <li>Blogging</li>
+                <li>Socialising</li>
+            </ul>
+        </div>
+
+        <div class="box" id="index-quals">
+            <h4 class="headers">
+                <em>Qualifications and demos</em>
+            </h4>
+            <p>here is a list of my qualifications</p>
+
+            <ol>
+                <li>Certificate Information Security Management Principles</li>
+                <li>Certified Ethical Hacker</li>
+                <li>Award in Education and training</li>
+                <li>A1 Assessors award</li>
+            </ol>
+
+            <a href="qualifications.html#quals-table" class="cta-button">Find out more !</a> 
+        </div>
+
+        <div class="box" id="hidden">
+            <!-- https://depositphotos.com/photos/network.html -->
+            <picture>
+                <!-- For modern browsers supporting AVIF -->
+                <source srcset="images/network-image.avif" type="image/avif"> <!---->
+
+                <!-- Fallback for older browsers -->
+                <source srcset="images/network-image.webp" type="image/webp">
+
+                <!-- Fallback for browsers not supporting AVIF or WebP -->
+                <img src="images/network-image.jpg" alt="profile picture" id="network-pic">
+            </picture>
+        </div>
+    </div>
+
+    <!-- Image sourced from https://aurus5.com/blog/cisco/cisco-logo-history-and-evolution/ -->
+    <img src="images/cisco.svg" alt="SVG Image" class="responsive-svg">
+
+    
+
+    <div>
+        <footer>
+            <p>
+                &copy; Jamie Carson student no. 23035895
+                This is for an assignment at Staffordshire University Web Dev and OS
+                <a href="https://validator.w3.org/nu/#file" class="footer-link">(link to html validation)</a>
+                <a href="https://jigsaw.w3.org/css-validator/validator" class="footer-link">(link to CSS validation)</a>
+            </p>
+        </footer>
+    </div>
+    <script>
+        //check whether browser support service workers
+        if ('serviceWorker' in navigator) {
+            //wait until page loaded to avoid delaying rendering
+            window.addEventListener('load', function () {
+                //register service worker
+                navigator.serviceWorker.register('serviceworker.js').then(
+                    function (registration) {
+                        console.log('Service worker registration successful', registration);
+                    },
+                    function (err) {
+                        console.log('Service worker registration failed', err);
+                    });
+            });
+        }
+    </script>
+
+
+
+</body>
+
+</html>
